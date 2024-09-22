@@ -1,0 +1,340 @@
+body > * {
+  font-family: sans-serif;
+}
+
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cuisine {
+  margin-right: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+  padding-top: 1rem;
+}
+nav > * {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+section > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.surpriseWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.surpriseWrapper > button {
+  width: 30%;
+  padding: 1.5rem;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 5000px;
+  font-size: 1.5rem;
+
+  transition: 0.5s ease;
+}
+
+.surpriseWrapper > button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+p {
+  margin: 0;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+.card {
+  width: fit-content;
+  position: relative;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 425px;
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease;
+  h3,
+  p {
+    margin-left: 0.5rem;
+  }
+  .typeCard {
+    color: #ff6247;
+    font-weight: bold;
+  }
+  h3 {
+    color: black;
+  }
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+.allRestaurantsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heart {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.wrapperMostPopularCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mostPopularContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.filterBtnsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterBtnsWrapper > * {
+  background-color: #ff6247;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.filterBtnsWrapper > *:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+.cuisinesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+.cuisinesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cuisinesHomePage {
+  text-align: center;
+}
+.imageCard {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.favoritesWrapperCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  width: 80%;
+}
+.favoritesWrapperCards > * {
+  width: 100% !important;
+}
+.favoritesWrapperCards > img {
+  height: 100% !important;
+  height: fit-content;
+}
+.favoritesWrapperCards > #cardLink {
+  width: 100%;
+}
+.favoritesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgIndividualPage {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.imageAndInfoDiv > p {
+  width: 100%;
+}
+.individualPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 100vh;
+  width: 100%;
+  padding-top: 2rem;
+
+  gap: 2rem;
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.revForm {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 1rem;
+}
+.revForm > textarea {
+  resize: none;
+  width: 100% !important;
+  height: 100px !important;
+}
+
+#star-slider {
+  appearance: none;
+  width: 50%;
+  height: 10px;
+
+  border-radius: 5px;
+  padding: 0;
+}
+
+#star-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: green;
+  cursor: pointer;
+}
+
+.containerOfComments {
+  width: 100%;
+  height: 40%;
+  overflow-y: scroll;
+  background-color: white;
+  padding: 1rem;
+  scrollbar-width: thin;
+  margin-bottom: 1rem;
+}
+
+.leftDiv,
+.rightDiv {
+  width: 50%;
+  height: 90%;
+
+  background-color: #eeeeee;
+
+  padding: 2rem;
+
+  border-radius: 20px;
+}
+.individualPageHeader {
+  text-align: center;
+}
+.commentWrapper {
+  margin-top: 2.5rem;
+  background-color: rgb(238, 238, 238);
+  padding: 1rem;
+  border-radius: 10px;
+  p {
+    margin: 1rem;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+form > label {
+  font-weight: bold;
+}
+
+form > textarea {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+form > input {
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}

@@ -1,0 +1,373 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: 400;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 90vh; */
+
+  gap: 2rem;
+
+  padding: 3rem;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+
+  border-bottom: 1px solid #646cff;
+  /* padding-right: 2rem; */
+}
+
+.navDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.active {
+  position: relative;
+  line-height: 2rem;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: currentColor;
+  z-index: -1;
+}
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.restCardWrapper {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 1rem;
+  background-color: #4d4d4d;
+  /* transition: 0.5s ease; */
+  transition: transform 0.2s ease, border 0.2s ease; /* Smooth transition */
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+.restCardWrapper > img {
+  border-radius: 20px 20px 0px 0px;
+
+  width: 100%;
+  height: 60%;
+}
+.restCardWrapper > h3,
+p,
+button {
+  margin-left: 1rem;
+}
+
+.restCardWrapper:hover {
+  border: 3px solid #646cff; /* Keep your existing border on hover */
+  transform: scale(1.05); /* Slightly increase size to create a pop effect */
+  box-shadow: 0 4px 15px rgba(100, 108, 255, 0.3);
+}
+.btnsWrapperFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.activeBtnFilter {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.containerEdit {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  gap: 2rem;
+}
+.revCont {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.revCard > p {
+  margin: 0;
+}
+.revCard {
+  background-color: #4d4d4d;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+.inputsWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #4d4d4d;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 20%;
+}
+
+.inputsWrapper > p {
+  margin: 0;
+}
+.inputsWrapper > input {
+  margin: 0;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10000px;
+  border: none;
+  width: 100%;
+}
+
+.inputsWrapper > select {
+  margin: 0;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10000px;
+  border: none;
+  width: 100%;
+}
+.inputsParentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.addRestFormO {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.addRestFormO > input {
+  width: 60%;
+  font-size: 1.5rem;
+
+  padding: 1rem;
+  border-radius: 10000px;
+  border: none;
+}
+.addRestFormO > select {
+  width: 60%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10000px;
+  border: none;
+}
+
+.loginForm > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loginForm > div > input {
+  padding: 1rem;
+  border-radius: 10000px;
+  border: none;
+  font-size: 1.5rem;
+}
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.errShow {
+  text-decoration: underline;
+}
+.loginSec {
+  height: 100vh;
+}
+
+.confirmDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.confirmDiv > p {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.inputsWrapperParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  gap: 2rem;
+}
+
+.blurWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(36, 36, 36, 0.678);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.blurBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 98;
+}
+
+.contentsHolder {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  background-color: rgb(77, 77, 77);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 100;
+}
+.contentsHolder > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.delCards {
+  cursor: auto;
+}
