@@ -1,0 +1,30 @@
+.popupcongrats {
+  text-align: center;
+  background-image: url("/images/confettis.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.popupcongrats .content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.popupcongrats .content .greenArrow {
+  width: 60%;
+}
+
+.popupcongrats .content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popupcongrats .content .iconCheck {
+  color: #3ca082;
+  margin-right: 1rem;
+}

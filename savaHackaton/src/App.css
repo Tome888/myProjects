@@ -1,0 +1,826 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(230, 230, 230);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+/* =======navbar======= */
+nav {
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  img {
+    width: 50px;
+  }
+}
+/* =======landingPage===== */
+.landingPageOne {
+  height: 100vh;
+  overflow: hidden;
+}
+.landingWrapper {
+  display: flex;
+}
+.linkWrapper {
+  flex-basis: 60%;
+}
+.phoneImgOne {
+  flex-basis: 40%;
+}
+.phoneImgOne img {
+  height: 80%;
+}
+.linkWrapper {
+  padding: 1rem;
+}
+.linkWrapper h1 {
+  text-align: center;
+  font-size: 7.5rem;
+  color: #01a080;
+}
+.linkWrapper h1 span {
+  font-weight: bold;
+}
+.wrapperBtns {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+.landingPageBtn {
+  width: 50%;
+  background-color: #1ea282;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+}
+
+/* ========Register======= */
+.css-1r7m31u-MuiFormControl-root-MuiTextField-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.css-1nv5fxk-MuiFormControl-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.css-l60ghk-MuiButtonBase-root-MuiButton-root {
+  border-radius: 20px !important;
+}
+.css-1wc848c-MuiFormHelperText-root{
+  margin-top: 0 !important;
+}
+.css-1fa0726-MuiFormControl-root-MuiTextField-root{
+  margin-bottom: 0 !important;
+}
+.test123 {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+.registerSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 10rem; */
+}
+.registerWrapper {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+.phoneImgWrapper {
+  flex-basis: 25%;
+  /* width: 300px; */
+}
+.formRegister {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+}
+.headerRegister {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+/* ==========Sidebar========= */
+.sideBarWrapper {
+  background-color: #01a180;
+  /* position: fixed; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; */
+  padding: 1rem;
+}
+
+.active-class {
+  border-bottom: 2px solid white;
+}
+
+.sideBarUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sideBarUl > li {
+  width: 100%;
+}
+.sideBarUl > * > * {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.4rem;
+}
+.navIcon {
+  margin-right: 0.5rem;
+  width: 20px;
+}
+.logoSideBar {
+  width: 200px;
+}
+
+.iconBot {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 35px;
+  color: white;
+}
+
+.paragBot {
+  position: absolute;
+  left: 30px;
+  bottom: 35px;
+  font-size: 11px;
+  color: white;
+  background-color: #bbbbbb80;
+  border: 1px solid #bbbbbb80;
+  border-radius: 20px;
+  padding: 2px 7px;
+}
+
+/* =========containerSection========== */
+.containerSection {
+  /* padding-left: 20rem; */
+  display: flex;
+  height: 100vh;
+}
+/* ========wrapperPages========= */
+.wrapperPages {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+.phoneVolume {
+  font-size: 25px;
+  color: #01a080;
+  margin-right: 1rem;
+}
+
+.MuiDateCalendar-root {
+  background-color: rgb(243, 243, 243);
+  height: 100px;
+  border-radius: 30px;
+  span {
+    padding: 0;
+    height: 0;
+  }
+  button {
+    height: auto;
+  }
+}
+
+.css-1rtg91x-MuiDateCalendar-root {
+  width: auto;
+  height: 250px !important;
+}
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==========MyProfile======== */
+.myProfileMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+.wrapperCalendarDiv {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+
+  gap: 0.5rem;
+}
+
+.selectTwo {
+  display: flex;
+  justify-content: space-between;
+}
+.selectTwo > .mright-2 {
+  margin-right: 5rem;
+}
+.selectChart {
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: #d9d9d9;
+  font-size: 0.75rem;
+}
+.sixPack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.sixPack > div {
+  width: 45%;
+  border: 1px solid #01a080;
+
+  border-radius: 5px;
+}
+
+.numberr {
+  font-size: 2rem;
+}
+.textt {
+  font-size: 0.75rem;
+}
+.cardInfoDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+}
+.cardInfoDiv > .underline {
+  text-decoration: underline;
+}
+.wrapperLeft {
+  flex-basis: 80%;
+}
+.chartMainWrapper {
+  height: 85vh;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.pfpImgWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.pfpImgWrapper > img {
+  width: 70px;
+}
+.pfpImgWrapper > p {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+.lastActivityWrapper {
+  width: 90%;
+}
+
+.statsPolicWrapper {
+  width: 90%;
+}
+
+.badge {
+  background: linear-gradient(
+    to left,
+    rgba(85, 209, 185, 1),
+    rgba(242, 242, 242, 0.5)
+  );
+  color: black;
+  width: 120px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+.wrapperRight {
+  height: 55vh;
+  flex-basis: 20%;
+}
+.badge > p {
+  text-align: left;
+}
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pack {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pack > img {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+
+.numberrNot {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.wrapperNot {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.react-calendar__month-view__weekdays,
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none !important;
+}
+
+.react-calendar__tile {
+  padding: 5px !important;
+  background-color: #d9d9d9;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  gap: 3px;
+}
+
+.react-calendar__navigation {
+  display: flex;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow {
+  border: none;
+  background-color: transparent;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__arrow {
+  font-size: 50px;
+}
+
+.react-calendar__navigation__label {
+  pointer-events: none;
+  font-size: 25px;
+  color: #01a080;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  visibility: hidden;
+}
+
+.react-calendar__month-view__days__day {
+  width: 50px !important;
+  height: 50px;
+}
+
+
+
+.activeDate {
+  background-color: #01a080;
+}
+
+nav .leftIcon,
+.hiddenImg {
+  display: none;
+}
+
+.landingDivPage {
+  display: flex;
+  flex-direction: row !important;
+}
+
+@media screen and (max-width: 426px) {
+  nav .iconBack {
+    display: none;
+  }
+  nav .leftIcon {
+    display: block;
+    font-size: 25px;
+    color: black;
+  }
+  .landingWrapper {
+    flex-direction: column;
+  }
+  .linkWrapper h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .wrapperBtns {
+    margin: 3rem 0 1rem 0;
+    width: 100%;
+  }
+  .landingPageBtn {
+    width: 100%;
+  }
+  .landingDivPage {
+    flex-direction: column;
+  }
+  .phoneImgOne img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    /* height: 80% !important; */
+  }
+  .mobileImg {
+    display: none !important;
+  }
+  .signIn {
+    background-color: #e6e6e6 !important;
+  }
+  .signInPage {
+    display: block !important;
+    height: auto !important;
+  }
+  .content {
+    margin-left: 0 !important;
+    width: 90%;
+    margin: 0 auto !important ;
+  }
+  .content .logInBtns {
+    width: auto !important;
+  }
+  .headerRegister {
+    font-size: 3rem;
+  }
+  .registerWrapper,
+  .formRegister {
+    width: 100%;
+  }
+}
+/* =========custom calendar======= */
+/* src/components/Calendar.css */
+
+.calendar {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendarBtns {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.monthName {
+  font-size: 1.2em;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: #f7f7f7;
+}
+
+.notification {
+  position: relative;
+}
+
+.red-dot {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.popup {
+  position: absolute;
+  background-color: #01a080;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  border-radius: 10px;
+}
+
+.day:hover .popup {
+  display: block;
+}
+
+.popupMessage {
+  font-size: 0.9em;
+}
+
+.calendarDiv {
+  background-color: #f3f3f3;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0.5rem;
+  height: 300px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
+}
+.calendarBtns{
+  border: none;
+  font-size: 2rem;
+}
+.monthName{
+  color: #01a080;
+  font-weight: 500;
+}
+.calendar {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  
+}
+
+.day, .day-name {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(226, 224, 224);
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.empty {
+  border: none;
+}
+
+.notification {
+  position: relative;
+}
+
+.red-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* =========Mobile========= */
+
+@media screen and (max-width: 415px) {
+  .phoneImgWrapper>img{
+    display: none;
+  }
+  .registerSection{
+    width: 100%;
+    justify-content: start;
+  }
+  .test123{
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .headerRegister{
+    font-size: 2rem;
+  }
+  .formRegister{
+    width: 100% !important;
+  }
+  button.MuiButtonBase-root {
+    width: 300px !important;
+    margin-left: 50px;
+    /* margin-right: 50px; */
+  }
+  .fa-solid, .fas{
+    margin-left: 200px;
+  }
+  .myProfileMainDiv {
+    flex-direction: column;
+  }
+  .sideBarWrapper{
+    display: none;
+  }
+  .wrapperLeft{
+    width: auto;
+  }
+  .myProfileMainDiv{
+    align-items: center;
+  }
+  .chartMainWrapper{
+    margin-top: 1200px;
+    width: 100%;
+    flex-direction: column;
+    height: 200vh;
+  }
+  .css-1mhew7w{
+    display: none;
+  }
+  .selectTwo>*{
+    width: 180px;
+  }
+  .wrapperBadges{
+    display: flex;
+    flex-direction: column;
+  }
+  .statsPolicWrapper{
+    width: 80%;
+    gap: 2rem;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .lastActivityWrapper{
+    width: 70%;
+  }
+  .wrapperBadges{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .badge{
+    width: 100%;
+  }
+  .wrapperCalendarDiv{
+    width: 100%;
+    height: 200vh;
+    gap: 2.5rem;
+  }
+  .sixPack{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .pack{
+    width: 80% !important;
+  }
+  .whiteBg{
+    display: none !important;
+  }
+  .mobileWrapperPol{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+  .h3mobile{
+    background: linear-gradient(90deg, #01A180 0%, #D9D9D9 100%);
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .mobileSelect{
+    background-color: #01a080;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    padding: 0.5rem;
+    width: 150px;
+  }
+  .selectWrapperMobile{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .containerBlocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #01A180 0%, rgba(187, 187, 187, 0.58) 80.09%);
+    width: 80%;
+    height: 8rem;
+  }
+  .containerBlocks > .fa-solid, .fas{
+    margin: 0;
+  }
+  .wrapperTextMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+  }
+}

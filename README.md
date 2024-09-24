@@ -1,2 +1,3 @@
-# myProjects
-This is a repository with all of my portfolio projects inside.
+# STEPS TO RUN THE PROJECT
+
+Open the savaHackaton in terminal and run these commands ('npm i'> 'npm run dev' ).

@@ -1,0 +1,20 @@
+.popupsuccess {
+  text-align: center;
+}
+
+.popupsuccess .circleCheck {
+  color: #3ca082;
+  margin-bottom: 1rem;
+  font-size: 10rem;
+}
+
+.popupsuccess h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.popupsuccess p {
+  color: #797979;
+
+  margin-bottom: 1rem;
+}

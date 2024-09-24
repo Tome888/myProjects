@@ -1,0 +1,33 @@
+.popup-auth {
+  text-align: center;
+}
+
+.popup-auth .error {
+  color: red;
+}
+
+.mg-bt-2 {
+  margin-bottom: 2rem;
+}
+
+.popup-auth h4 {
+  font-size: 1.1rem;
+}
+
+.popup-auth .seePw {
+  margin-top: 1rem;
+}
+
+:root {
+  --ReactInputVerificationCode-itemWidth: 3.5rem !important;
+}
+.popup-auth .iconCheck {
+  font-size: 4rem;
+  color: #3ca082;
+}
+
+.popup-auth .authHelp {
+  color: #6b6b6b;
+  margin-top: 1rem;
+  text-decoration: underline;
+}

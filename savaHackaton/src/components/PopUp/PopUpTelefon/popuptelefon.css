@@ -1,0 +1,78 @@
+.telefon {
+  text-align: center;
+  overflow: hidden;
+}
+
+.telefon h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
+.telefon .content {
+  text-align: left;
+}
+
+.telefon .phoneInput {
+  margin-bottom: 1.8rem;
+}
+
+.telefon .buttonTelContent {
+  display: flex;
+  width: 100%;
+  text-transform: none;
+  align-items: center;
+}
+
+.telefon .buttonTelContent .phoneIcons {
+  color: #3ca082;
+  font-size: 2.5rem;
+}
+
+.telefon .mg-bt {
+  margin-bottom: 1.5rem;
+}
+
+.telefon .buttonTel {
+  border: 1px solid #3ca082;
+  color: black;
+}
+
+.telefon .buttonTel:hover {
+  border: 1px solid #3ca082;
+}
+
+.telefon .content-items {
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.telefon .content-items h5 {
+  font-size: 1.2rem;
+}
+.telefon .content-items p {
+  font-size: 0.8rem;
+}
+
+.telefon .iconCheck {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #3ca082;
+}
+.PhoneInputInput {
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+
+.PhoneInputCountry {
+  border: 1px solid black;
+  border-right: none;
+  margin-right: 0;
+  padding: 0.8rem;
+  background-color: #d9d9d9;
+}
+.PhoneInputCountryIcon--border {
+  box-shadow: none;
+}
+.PhoneInputCountryIconImg {
+  border-radius: 5px;
+}

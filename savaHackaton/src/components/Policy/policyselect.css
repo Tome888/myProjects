@@ -1,0 +1,23 @@
+.selectDiv {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectDiv .formControls select {
+  padding: 0.5rem 2rem 0.5rem 4rem;
+  width: 300px;
+  border: 2px solid #01a180;
+  border-radius: 10px;
+  text-transform: none;
+}
+.selectDiv .formControls select:focus {
+  border: 2px solid #01a180;
+  outline: none !important;
+}
+.selectDiv .formControls .inputFirst {
+  margin-right: 1rem;
+}
+.selectDiv .submitBtn .iconPlus {
+  margin-right: 1rem;
+}

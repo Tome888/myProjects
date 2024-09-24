@@ -1,0 +1,99 @@
+.signIn {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+.signInPage {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.signIn nav {
+  position: absolute;
+}
+
+.mobileImg img {
+  width: 80%;
+}
+
+.content {
+  margin-left: 35px;
+  text-align: center;
+}
+
+.content .inputField {
+  display: block;
+}
+
+.inputField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.inputField
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #3ca082;
+}
+
+.inputField .MuiInputLabel-root.Mui-focused {
+  color: #3ca082;
+}
+
+.content .emailField {
+  margin-bottom: 2rem;
+}
+
+.content img {
+  width: 200px;
+}
+
+.content .forgetPassword {
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content .submitBtn {
+  border-radius: 20px;
+  padding: 0.5rem 3rem;
+  background-color: #3ca082;
+  border: 2px solid #d6d6d6;
+  margin-bottom: 0.5rem;
+}
+
+.content .submitBtn:hover {
+  background-color: #3ca082;
+}
+
+.registerSpan {
+  text-decoration: underline;
+  color: #3ca082;
+}
+
+.content .orPar {
+  margin: 1rem 0;
+}
+
+.content .logInBtns {
+  color: black;
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 15px;
+  text-align: left;
+  padding-left: 3rem;
+  text-transform: none;
+}
+
+.content .logInBtns svg {
+  margin-right: 0.5rem;
+}
+
+.content .logInBtns:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.content .logInBtns:hover {
+  border: 1px solid black;
+  background-color: transparent;
+}
