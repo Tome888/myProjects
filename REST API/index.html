@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../Main Project 2/LOGO.png" type="image/x-icon" />
+    <title>SafeBlink</title>
+  </head>
+  <body>
+    <div class="navBurgerMenu"></div>
+    <nav>
+      <a href="index.html">
+        <img src="../Main Project 2/LOGO.png" alt="" />
+      </a>
+      <div id="burgerBtn" class="burger">
+        <div class="firstBar"></div>
+        <div class="secondBar"></div>
+        <div class="thirdBar"></div>
+      </div>
+
+      <div class="wrapperForBurgerBtns">
+        <div class="wrapperAnchor">
+          <a id="cardFilterPageNav" href="#card_filter_page">
+            <h3 class="aH3">Информирај се</h3>
+          </a>
+          <a id="chatPageNav" href="#chat">
+            <h3 class="aH3">Дискусии</h3>
+          </a>
+          <a id="contactPageNav" href="#contact">
+            <h3 class="aH3">Контакт</h3>
+          </a>
+          <a id="navToProfilePageAnchor" href="#profile">
+            <h3 class="aH3 userOn">Профил</h3>
+          </a>
+        </div>
+        <div class="wrapperLoginLangSearch">
+          <img class="userOn" src="../Main Project 2/pfp.png" alt="" />
+          <img
+            id="loginBtn"
+            class="userOff"
+            src="../Main Project 2/icons/Frame 39.svg"
+            alt=""
+          />
+          <p class="logOutBtn mkAl userOn">Одјави се</p>
+          <p class="mkAl">MK|AL</p>
+          <i class="fa-solid fa-magnifying-glass galsss"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div id="videoOnClick">
+      <video
+        src="../Main Project 2/20600550-uhd_3840_2160_30fps.mp4"
+        controls
+        autoplay
+      ></video>
+    </div>
+    <div id="switchDivHomePage">
+      <main>
+        <div class="videoWrapper">
+          <img
+            id="homePageVideoPlayBtn"
+            src="../Main Project 2/icons/video_play_button.svg"
+            alt=""
+          />
+        </div>
+      </main>
+      <section id="infoHomePage">
+        <h1>Информирај се и заштити се</h1>
+        <div class="wrapperCardsInfo">
+          <div class="cardInfo infoCard1">
+            <div class="wrapperSVGH2">
+              <h2 class="h2InfoCards">Научи сè што треба да знаеш</h2>
+              <img
+                class="vectorIconInfoCards"
+                src="../Main Project 2/icons/Vector (1).svg"
+                alt=""
+              />
+            </div>
+            <p class="loremTextCardInfo">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              neque quisquam perferendis dignissimos magnam dicta, officiis est
+              hic assumenda error facilis molestias? Laborum, officia voluptates
+              maxime aliquam quia illo veniam fugit temporibus nemo consequatur
+              numquam aliquid deleniti reiciendis sapiente
+            </p>
+            <button id="cardsSectionMoreBtn" class="doznajPovekeBtn">
+              Дознај повеќе
+            </button>
+          </div>
+          <div class="cardInfo infoCard2">
+            <div class="wrapperSVGH2">
+              <h2 class="h2InfoCards">Вклучи се во дискусија</h2>
+              <img
+                class="vectorIconInfoCards"
+                src="../Main Project 2/icons/Vector (2).svg"
+                alt=""
+              />
+            </div>
+            <p class="loremTextCardInfo">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              neque quisquam perferendis dignissimos magnam dicta, officiis est
+              hic assumenda error facilis molestias? Laborum, officia voluptates
+              maxime aliquam quia illo veniam fugit temporibus nemo consequatur
+              numquam aliquid deleniti reiciendis sapiente
+            </p>
+            <button id="chatSectionMoreBtn" class="doznajPovekeBtn">
+              Дознај повеќе
+            </button>
+          </div>
+          <div class="cardInfo infoCard3">
+            <div class="wrapperSVGH2">
+              <h2 class="h2InfoCards">Следи го својот напредок</h2>
+              <img
+                class="vectorIconInfoCards"
+                src="../Main Project 2/icons/Vector (3).svg"
+                alt=""
+              />
+            </div>
+            <p class="loremTextCardInfo">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              neque quisquam perferendis dignissimos magnam dicta, officiis est
+              hic assumenda error facilis molestias? Laborum, officia voluptates
+              maxime aliquam quia illo veniam fugit temporibus nemo consequatur
+              numquam aliquid deleniti reiciendis sapiente
+            </p>
+            <button id="profileSectionMoreBtn" class="doznajPovekeBtn">
+              Дознај повеќе
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="switchDivLoginPage" class="loginPageMain">
+      <div id="logInNoty">
+        <div class="greetings"></div>
+        <button id="closeNoty">Продолжи кон Safeblink</button>
+      </div>
+      <div class="leftColumnWrapper">
+        <h2>Придружи ни се</h2>
+
+        <div class="continueWithBtn">
+          <img src="../Main Project 2/icons/logos_google-icon.svg" alt="" />
+          <p>Продолжи со Google</p>
+        </div>
+
+        <div class="continueWithBtn">
+          <img src="../Main Project 2/icons/apple_logo.svg" alt="" />
+          <p>Продолжи со Apple</p>
+        </div>
+
+        <div class="continueWithBtn">
+          <img
+            src="../Main Project 2/icons/akar-icons_tiktok-fill.svg"
+            alt=""
+          />
+          <p>Продолжи со TikTok</p>
+        </div>
+
+        <div class="ili">
+          <hr />
+          <p>или</p>
+          <hr />
+        </div>
+
+        <form id="loginForm">
+          <label for="text">Корисничко име*</label>
+          <input id="username" type="text" placeholder="Username" />
+          <label for="password">Лозинка*</label>
+          <input id="pass" type="password" placeholder="Password" />
+
+          <div class="rememberMeWrapper">
+            <div>
+              <input type="radio" />
+              <label for="radio">Запомни ме</label>
+            </div>
+
+            <p>Ја заборави лозинката?</p>
+          </div>
+          <button id="submitBtn">Најави се</button>
+        </form>
+      </div>
+
+      <div class="rightColumnWrapper">
+        <img src="../Main Project 2/superman.png" alt="" />
+      </div>
+    </section>
+
+    <section id="switchDivCardsFilter">
+      <h2>Сè што треба да знаеш</h2>
+
+      <div class="headings3Wrapper">
+        <h3>Видеа</h3>
+        <h3>Упатства</h3>
+        <h3>Статии</h3>
+      </div>
+
+      <div class="filterWrapper">
+        <button data-tag-btn="Тема 1">Тема 1</button>
+        <button data-tag-btn="Тема 2">Тема 2</button>
+        <button data-tag-btn="Тема 3">Тема 3</button>
+      </div>
+
+      <div id="cardFilterWrapper"></div>
+
+      <div class="backgroundComments">
+        <div class="commentsWrapper">
+          <div class="commentsSection">
+            <h3>Лоши навики при “Live streaming”</h3>
+
+            <p>
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард кој
+              се користел како модел уште пред 1500 години, кога непознат
+              печатар зел кутија со букви и ги сложил на таков начин за да
+              направи примерок на книга. И не само што овој модел опстанал пет
+              векови туку почнал да се користи и во електронските медиуми, кој
+              се уште не е променет.
+            </p>
+            <p class="grayedOutSmall">Објавено на 05/28/23</p>
+
+            <div class="addCommentWrapper grayBorderAll">
+              <form id="commentForm">
+                <input
+                  id="userComment"
+                  type="text"
+                  placeholder="Остави коментар..."
+                />
+              </form>
+              <div class="mainUserInfo">
+                <img id="pfpOfCommenter" src="../Main Project 2/Anon pfp.svg" />
+                <p id="usernameOfCommenter" class="grayedOutSmall">
+                  Име Презиме
+                </p>
+              </div>
+            </div>
+            <div class="allCommentsWrapper">
+              <div id="commFromTheUSer"></div>
+              <div class="addCommentWrapper grayBorderAll">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+                <div class="userInfo">
+                  <div class="userInfo">
+                    <img src="../Main Project 2/Anon pfp.svg" />
+                    <p>Име Презиме</p>
+                  </div>
+                  <p class="grayedOutSmall">00/00/00, 00:00</p>
+                </div>
+              </div>
+
+              <div class="addCommentWrapper grayBorderAll">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+                <div class="userInfo">
+                  <div class="userInfo">
+                    <img src="../Main Project 2/Anon pfp.svg" />
+                    <p>Име Презиме</p>
+                  </div>
+                  <p class="grayedOutSmall">00/00/00, 00:00</p>
+                </div>
+              </div>
+
+              <div class="addCommentWrapper grayBorderAll">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+                <div class="userInfo">
+                  <div class="userInfo">
+                    <img src="../Main Project 2/Anon pfp.svg" />
+                    <p>Име Презиме</p>
+                  </div>
+                  <p class="grayedOutSmall">00/00/00, 00:00</p>
+                </div>
+              </div>
+
+              <div class="addCommentWrapper grayBorderAll">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+                <div class="userInfo">
+                  <div class="userInfo">
+                    <img src="../Main Project 2/Anon pfp.svg" />
+                    <p>Име Презиме</p>
+                  </div>
+                  <p class="grayedOutSmall">00/00/00, 00:00</p>
+                </div>
+              </div>
+
+              <div class="addCommentWrapper grayBorderAll">
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+                <div class="userInfo">
+                  <div class="userInfo">
+                    <img src="../Main Project 2/Anon pfp.svg" />
+                    <p>Име Презиме</p>
+                  </div>
+                  <p class="grayedOutSmall">00/00/00, 00:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videoSection">
+            <img
+              class="playBtnCards"
+              src="../Main Project 2/icons/play icon cards.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="switchDivChatPage">
+      <h2 class="h2Chat">Табла за дискусии</h2>
+      <div id="wrapperOfTheChat" class="chatWrapper">
+        <div class="blurMore">
+          <i class="fa-solid fa-plus"></i>
+          <p>Види повеќе</p>
+        </div>
+        <div id="insertBeforeEl" class="inputWrapper">
+          <form id="formChat">
+            <input
+              id="chatTextInput"
+              type="text"
+              placeholder="Сподели искуство..."
+            />
+          </form>
+          <div class="wrapperCredsChat">
+            <img id="pfpChat" src="../Main Project 2/Anon pfp.svg" />
+            <p id="userNameChat" class="">Име Презиме</p>
+          </div>
+        </div>
+        <div id="addUserChat"></div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал
+          </p>
+          <div>
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга. И не само што овој модел опстанал пет векови туку почнал да
+            се користи и во електронските медиуми, кој се уште не е променет. Се
+            популаризирал во 60-тите години на дваесеттиот век со издавањето на
+            збирка од страни во кои се наоѓале Lorem Ipsum пасуси, а денес во
+            софтверскиот пакет како што е Aldus PageMaker во кој се наоѓа
+            верзија на Lorem Ipsum.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+
+        <div class="wrapperOfTheComment">
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија.
+          </p>
+          <div class="spaceBetween">
+            <div class="detailChatDiv">
+              <img src="../Main Project 2/Anon pfp.svg" alt="" />
+              <p>Име Презиме</p>
+            </div>
+            <p>00/00/00, 00:00</p>
+          </div>
+          <input type="text" placeholder="Пиши коментар..." />
+          <div class="detailChatDiv">
+            <i class="fa-solid fa-plus"></i>
+            <p>5 Коментари</p>
+            <p>84 Реакции</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="switchToProfilePage">
+      <h2>Профил</h2>
+      <div class="pfpAndUserInfoWrapper">
+        <div class="pfpWrapper">
+          <div></div>
+        </div>
+
+        <form class="infoWrapper">
+          <label for="text">Име и презиме / Корисничко име</label>
+          <input type="text" value="username" readonly />
+
+          <label for="email">Email адреса</label>
+          <div class="funcInputs">
+            <input id="emailInput" type="email" value="useruser@gmail.com" />
+            <button class="changeProfileBtn btn0">Промени</button>
+          </div>
+
+          <label for="password">Лозинка</label>
+          <input type="password" value="******" readonly />
+
+          <label for="number">Година на раѓање</label>
+          <div class="funcInputs">
+            <input id="birthInput" type="number" value="2007" />
+            <button class="changeProfileBtn btn1">Промени</button>
+          </div>
+
+          <label for="text">Пол</label>
+          <input type="text" value="машки" readonly />
+        </form>
+      </div>
+
+
+      <div class="progressWrapper">
+        <div>
+          <h3>Следи го својот Safeblink напредок!</h3>
+          <p>Моментално ниво: Лорем ипсум</p>
+        </div>
+        <div class="progressBar">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="achievementsWrapper">
+        <div id="joinedBadge">
+          <i class="fa-solid fa-hand-fist badgeAchi"></i>
+          <p>Се придружи!</p>
+        </div>
+
+        <div id="watchedVideosBadge">
+          <i class="fa-solid fa-video badgeAchi"></i>
+          <p>Изгледани 5 видеа</p>
+        </div>
+
+        <div id="chatedBadge">
+          <i class="fa-regular fa-comment badgeAchi"></i>
+          <p>Активност во дискусија</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="switchToContactPage">
+      <h2>Контакт</h2>
+      <h3>Побарај стручна помош</h3>
+      <div class="infoDivContact">
+        <div>
+          <h4>Агенција за заштита на личните податоци</h4>
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+        </div>
+        <button>Линк</button>
+      </div>
+      <h3>Невладини организации</h3>
+
+      <div class="infoDivContact">
+        <div>
+          <h4>NGO 1</h4>
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+        </div>
+        <button>Линк</button>
+      </div>
+
+      <div class="infoDivContact">
+        <div>
+          <h4>NGO 2</h4>
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+        </div>
+        <button>Линк</button>
+      </div>
+
+      <div class="infoDivContact">
+        <div>
+          <h4>NGO 3</h4>
+          <p>
+            Лорем ипсум е едноставен модел на текст кој се користел во
+            печатарската индустрија. Лорем ипсум бил индустриски стандард кој се
+            користел како модел уште пред 1500 години, кога непознат печатар зел
+            кутија со букви и ги сложил на таков начин за да направи примерок на
+            книга.
+          </p>
+        </div>
+        <button>Линк</button>
+      </div>
+    </section>
+    <footer>
+      <div class="cardFooterWrapper">
+        <img src="../Main Project 2/icons/logo2.svg" alt="" />
+        <p class="footerWhite">
+          International Foundation for Electoral Systems (IFES)
+        </p>
+        <div class="footerRow">
+          <div class="footerDflexRow">
+            <img src="../Main Project 2/icons/mingcute_phone-line.svg" alt="" />
+            <p class="footerWhite">+389-2-312-228</p>
+          </div>
+          <div class="footerDflexRow">
+            <img src="../Main Project 2/icons/lucide_mail.svg" alt="" />
+            <p class="footerWhite">ifes.nmk@ifes.org</p>
+          </div>
+        </div>
+        <h2 class="mkAl2 mobileFlex">MK|AL</h2>
+      </div>
+      <div class="cardFooterWrapper secondDivFooter">
+        <p class="footerWhite">Информирај се</p>
+        <p class="footerWhite">Дискусии</p>
+        <p class="footerWhite">Контакт - корисни линкови</p>
+        <p class="footerWhite">Закон за заштита на личните податоци</p>
+      </div>
+
+      <div class="cardFooterWrapper dFlexEnd">
+        <h2 class="mkAl2">MK|AL</h2>
+        <div class="socialIconsDiv">
+          <img src="../Main Project 2/icons/facebook.svg" alt="" />
+          <img src="../Main Project 2/icons/ig.svg" alt="" />
+          <img src="../Main Project 2/icons/yt.svg" alt="" />
+          <img
+            src="../Main Project 2/icons/akar-icons_tiktok-fill.svg"
+            alt=""
+          />
+        </div>
+        <p class="mkAl2 mobileDisplayOn">
+          &copy; All Rights Reserved. | safeblink.mk
+        </p>
+      </div>
+    </footer>
+    <script src="filter_cards.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
