@@ -1,0 +1,2 @@
+1. Open the db.json in terminal and paste this (json-server --watch db.json --port 5000)
+2.open server.js in terminal and paste this (node server.js)
